@@ -165,3 +165,139 @@ a {
     max-width: 280px;
   }
 }
+
+/* ---------- Subpage Header ---------- */
+
+.site-header {
+  padding: 36px 0;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.site-brand {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.brand-cn {
+  font-size: 1.2rem;
+}
+
+.brand-en {
+  font-size: 0.85rem;
+  color: #777168;
+}
+
+.site-nav {
+  display: flex;
+  gap: 26px;
+  font-size: 0.85rem;
+}
+
+.site-nav a:hover,
+.course-link:hover {
+  opacity: 0.55;
+}
+
+
+/* ---------- General Page ---------- */
+
+.page-main {
+  min-height: calc(100vh - 180px);
+  padding: 70px 0 100px;
+}
+
+.page-intro {
+  margin-bottom: 80px;
+}
+
+.page-intro h1 {
+  margin: 0;
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.page-subtitle {
+  margin: 18px 0 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1rem;
+  font-style: italic;
+  color: #777168;
+}
+
+
+/* ---------- Notes Directory ---------- */
+
+.notes-directory {
+  max-width: 760px;
+}
+
+.subject-title {
+  margin: 0 0 22px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d8d2c8;
+  font-size: 1.5rem;
+}
+
+.course-link {
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  align-items: center;
+  padding: 17px 0;
+  border-bottom: 1px solid #e2ddd4;
+}
+
+.course-code {
+  font-size: 0.82rem;
+  color: #777168;
+}
+
+.course-name {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.05rem;
+}
+
+.course-arrow {
+  font-size: 1rem;
+}
+
+
+/* ---------- Subpage Mobile ---------- */
+
+@media (max-width: 700px) {
+
+  .site-header {
+    padding: 26px 0;
+  }
+
+  .header-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .site-nav {
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .page-main {
+    padding: 48px 0 80px;
+  }
+
+  .page-intro {
+    margin-bottom: 60px;
+  }
+
+  .course-link {
+    grid-template-columns: 80px 1fr auto;
+  }
+}
