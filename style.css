@@ -100,15 +100,17 @@ a {
 
 .home-image {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-top: 140px;
+  padding-right: 40px;
 }
 
 .home-image img {
   display: block;
-  width: 100%;
-  max-width: 360px;
+  width: 150px;
   height: auto;
+  opacity: 0.9;
 }
 
 .site-footer {
