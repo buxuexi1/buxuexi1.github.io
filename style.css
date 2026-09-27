@@ -301,3 +301,109 @@ a {
     grid-template-columns: 80px 1fr auto;
   }
 }
+
+/* ---------- STA357 Course Page ---------- */
+
+.breadcrumb {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 34px;
+
+  font-size: 0.72rem;
+  color: #aaa39a;
+}
+
+.breadcrumb a:hover {
+  color: #252525;
+}
+
+.course-intro {
+  margin-bottom: 72px;
+}
+
+.course-intro h1 {
+  max-width: 850px;
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: clamp(2.7rem, 5vw, 4.6rem);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+
+/* ---------- Lecture Cards ---------- */
+
+.lecture-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.lecture-card {
+  min-height: 270px;
+  padding: 26px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #faf8f2;
+  border: 1px solid #d8d2c8;
+}
+
+.lecture-number {
+  margin-bottom: 32px;
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 0.78rem;
+  color: #aaa39a;
+}
+
+.lecture-card h2 {
+  margin: 0 0 12px;
+
+  font-size: 1.35rem;
+}
+
+.lecture-topics {
+  margin: 0 0 30px;
+
+  font-size: 0.78rem;
+  line-height: 1.7;
+  color: #777168;
+}
+
+.lecture-card a {
+  margin-top: auto;
+
+  width: fit-content;
+  font-size: 0.78rem;
+  border-bottom: 1px solid #252525;
+}
+
+.lecture-card a:hover {
+  opacity: 0.55;
+}
+
+
+/* ---------- STA357 Mobile ---------- */
+
+@media (max-width: 700px) {
+
+  .breadcrumb {
+    margin-bottom: 26px;
+  }
+
+  .course-intro {
+    margin-bottom: 52px;
+  }
+
+  .lecture-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lecture-card {
+    min-height: 230px;
+  }
+}
