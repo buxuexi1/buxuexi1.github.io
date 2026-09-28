@@ -1,4 +1,6 @@
-/* ---------- Base ---------- */
+/* =========================================================
+   Base
+   ========================================================= */
 
 * {
   box-sizing: border-box;
@@ -12,7 +14,15 @@ body {
   margin: 0;
   background: #f5f1e8;
   color: #252525;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif;
+
   line-height: 1.6;
 }
 
@@ -36,57 +46,75 @@ a {
   margin: 0 auto;
 }
 
-/* ---------- Home ---------- */
+
+/* =========================================================
+   Home
+   ========================================================= */
 
 .home {
   min-height: 100vh;
+
   display: flex;
   flex-direction: column;
 }
 
 .home-main {
   flex: 1;
+
   display: flex;
   align-items: center;
 }
 
 .home-hero {
   width: 100%;
+
   display: grid;
   grid-template-columns: 1.3fr 0.7fr;
+
   align-items: center;
+
   gap: 80px;
   padding: 80px 0;
 }
 
 .home-title {
   margin: 0;
+
   font-family: Georgia, "Times New Roman", Times, serif;
+
   font-size: clamp(4rem, 8vw, 7rem);
   font-weight: 400;
+
   line-height: 1;
   letter-spacing: -0.04em;
 }
 
 .home-english {
   margin: 16px 0 0;
+
   font-family: Georgia, "Times New Roman", Times, serif;
+
   font-size: 1.5rem;
   font-weight: 400;
 }
 
 .home-tagline {
   margin: 52px 0 0;
+
   font-family: Georgia, "Times New Roman", Times, serif;
+
   font-size: 1.1rem;
   font-style: italic;
+
   color: #666158;
 }
 
 .home-nav {
   display: flex;
+
   gap: 28px;
   margin-top: 38px;
+
   font-size: 0.95rem;
 }
 
@@ -100,30 +128,46 @@ a {
 
 .home-image {
   display: flex;
+
   justify-content: flex-end;
   align-items: flex-end;
+
   padding-top: 140px;
   padding-right: 40px;
 }
 
 .home-image img {
   display: block;
+
   width: 150px;
   height: auto;
+
   opacity: 0.9;
 }
 
+
+/* =========================================================
+   Footer
+   ========================================================= */
+
 .site-footer {
   padding: 24px 0 32px;
+
   font-family: Georgia, "Times New Roman", Times, serif;
+
   font-size: 0.8rem;
   font-style: italic;
+
   color: #99938a;
 }
 
-/* ---------- Mobile ---------- */
+
+/* =========================================================
+   Home Mobile
+   ========================================================= */
 
 @media (max-width: 700px) {
+
   .container {
     width: calc(100% - 36px);
   }
@@ -134,7 +178,9 @@ a {
 
   .home-hero {
     grid-template-columns: 1fr;
+
     gap: 42px;
+
     padding: 64px 0 40px;
   }
 
@@ -153,20 +199,29 @@ a {
   .home-nav {
     flex-direction: column;
     align-items: flex-start;
+
     gap: 10px;
+
     margin-top: 32px;
   }
 
   .home-image {
     justify-content: flex-start;
+
+    padding-top: 0;
+    padding-right: 0;
   }
 
   .home-image img {
     max-width: 280px;
   }
+
 }
 
-/* ---------- Subpage Header ---------- */
+
+/* =========================================================
+   Subpage Header
+   ========================================================= */
 
 .site-header {
   padding: 36px 0;
@@ -174,15 +229,20 @@ a {
 
 .header-inner {
   display: flex;
+
   justify-content: space-between;
   align-items: center;
+
   gap: 40px;
 }
 
 .site-brand {
   display: flex;
+
   align-items: baseline;
+
   gap: 10px;
+
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -192,12 +252,15 @@ a {
 
 .brand-en {
   font-size: 0.85rem;
+
   color: #777168;
 }
 
 .site-nav {
   display: flex;
+
   gap: 26px;
+
   font-size: 0.85rem;
 }
 
@@ -207,10 +270,13 @@ a {
 }
 
 
-/* ---------- General Page ---------- */
+/* =========================================================
+   General Page
+   ========================================================= */
 
 .page-main {
   min-height: calc(100vh - 180px);
+
   padding: 70px 0 100px;
 }
 
@@ -220,21 +286,28 @@ a {
 
 .page-intro h1 {
   margin: 0;
+
   font-size: clamp(3rem, 6vw, 5rem);
+
   line-height: 1;
   letter-spacing: -0.03em;
 }
 
 .page-subtitle {
   margin: 18px 0 0;
+
   font-family: Georgia, "Times New Roman", Times, serif;
+
   font-size: 1rem;
   font-style: italic;
+
   color: #777168;
 }
 
 
-/* ---------- Notes Directory ---------- */
+/* =========================================================
+   Notes Directory
+   ========================================================= */
 
 .notes-directory {
   max-width: 760px;
@@ -242,26 +315,35 @@ a {
 
 .subject-title {
   margin: 0 0 22px;
+
   padding-bottom: 10px;
+
   border-bottom: 1px solid #d8d2c8;
+
   font-size: 1.5rem;
 }
 
 .course-link {
   display: grid;
+
   grid-template-columns: 100px 1fr auto;
+
   align-items: center;
+
   padding: 17px 0;
+
   border-bottom: 1px solid #e2ddd4;
 }
 
 .course-code {
   font-size: 0.82rem;
+
   color: #777168;
 }
 
 .course-name {
   font-family: Georgia, "Times New Roman", Times, serif;
+
   font-size: 1.05rem;
 }
 
@@ -270,7 +352,9 @@ a {
 }
 
 
-/* ---------- Subpage Mobile ---------- */
+/* =========================================================
+   General Subpage Mobile
+   ========================================================= */
 
 @media (max-width: 700px) {
 
@@ -281,11 +365,13 @@ a {
   .header-inner {
     align-items: flex-start;
     flex-direction: column;
+
     gap: 20px;
   }
 
   .site-nav {
     gap: 18px;
+
     flex-wrap: wrap;
   }
 
@@ -300,16 +386,23 @@ a {
   .course-link {
     grid-template-columns: 80px 1fr auto;
   }
+
 }
 
-/* ---------- STA357 Course Page ---------- */
+
+/* =========================================================
+   STA357 Course Page
+   ========================================================= */
 
 .breadcrumb {
   display: flex;
+
   gap: 8px;
+
   margin-bottom: 34px;
 
   font-size: 0.72rem;
+
   color: #aaa39a;
 }
 
@@ -323,32 +416,41 @@ a {
 
 .course-intro h1 {
   max-width: 850px;
+
   margin: 0;
 
   font-family: Georgia, "Times New Roman", Times, serif;
+
   font-size: clamp(2.7rem, 5vw, 4.6rem);
   font-weight: 400;
+
   line-height: 1.08;
   letter-spacing: -0.035em;
 }
 
 
-/* ---------- Lecture Cards ---------- */
+/* =========================================================
+   Lecture Cards
+   ========================================================= */
 
 .lecture-grid {
   display: grid;
+
   grid-template-columns: repeat(3, 1fr);
+
   gap: 20px;
 }
 
 .lecture-card {
   min-height: 270px;
+
   padding: 26px;
 
   display: flex;
   flex-direction: column;
 
   background: #faf8f2;
+
   border: 1px solid #d8d2c8;
 }
 
@@ -356,7 +458,9 @@ a {
   margin-bottom: 32px;
 
   font-family: Georgia, "Times New Roman", Times, serif;
+
   font-size: 0.78rem;
+
   color: #aaa39a;
 }
 
@@ -370,24 +474,45 @@ a {
   margin: 0 0 30px;
 
   font-size: 0.78rem;
+
   line-height: 1.7;
+
   color: #777168;
 }
 
-.lecture-card a {
+
+/* =========================================================
+   Lecture PDF Links
+   ========================================================= */
+
+.lecture-links {
   margin-top: auto;
 
-  width: fit-content;
-  font-size: 0.78rem;
-  border-bottom: 1px solid #252525;
+  display: flex;
+
+  align-items: center;
+
+  gap: 22px;
 }
 
-.lecture-card a:hover {
+.lecture-card .lecture-links a {
+  width: fit-content;
+
+  font-size: 0.78rem;
+
+  border-bottom: 1px solid #252525;
+
+  transition: opacity 0.15s ease;
+}
+
+.lecture-card .lecture-links a:hover {
   opacity: 0.55;
 }
 
 
-/* ---------- STA357 Mobile ---------- */
+/* =========================================================
+   STA357 Mobile
+   ========================================================= */
 
 @media (max-width: 700px) {
 
@@ -406,4 +531,10 @@ a {
   .lecture-card {
     min-height: 230px;
   }
+
+  .lecture-links {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
 }
